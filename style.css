@@ -1,0 +1,180 @@
+
+.banner
+{
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(rgba(4, 4, 4, 0.5),rgba(0,0,0,0.5)),url(background.webp);
+    background-size: cover;
+}
+.logo
+{
+    height: 90px;
+    width:auto;
+    width: 120px;
+    cursor: pointer;
+}
+.banner
+{
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background.webp);
+    background-size: cover;
+    
+}
+.navbar
+{
+    width:5%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: right;
+    justify-content:space-between ;
+
+}
+.navbar ul li a
+{
+    
+    list-style: none;
+    display: inline-block;
+    text-decoration:none;
+    color: #fff;
+    text-transform: uppercase;
+    justify-content:space-between ;
+}
+    .navbar ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 18px;
+    position: relative;
+}
+
+.navbar ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li a:hover::after
+{
+    width: 100%;
+}
+.content
+{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: lineargradient(red,blue);
+}
+.content h1
+{
+    font-size: 70px;
+    margin-top: 80px;
+    font-family: sans-serif;
+}
+.content p
+{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button
+{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span
+{
+    background: #009688;
+    height:100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span
+{
+    width: 100%;
+}
+button:hover
+{
+    border: none;
+}
+
+.footer{
+    background:#000000;
+    position: relative;
+    height: 20px;
+    margin-top: 800px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    height: 100px;
+    padding: 79px;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    cursor: pointer;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:750px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
